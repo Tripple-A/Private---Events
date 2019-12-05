@@ -1,10 +1,16 @@
 <h1>You are welcome <%= @user.name %></h1>
 
 <% if @events %>
+<h3>You created the following events</h3>
+
 <% @events.each do |event| %>
-  <b><%= event.title %></b>
-  <%= event.description %>
-  <b><%= event.date %></b>
+
+  <b> Title: <%= event.title.capitalize! %></b> <br>
+  <p>Description:  <%= event.description %></p>
+  
+ 
+
+  <b> Scheduled to hold at: <%= event.date %></b> <br><br>
 <% end %>
 <% end %>
 
