@@ -19,7 +19,7 @@ end
 
   def show
     @user = User.find(params[:id])
-    @events = @user.events
+    @events = @user.created_events
     
   end
 

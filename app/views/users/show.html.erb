@@ -5,14 +5,14 @@
 
 <% @events.each do |event| %>
 
-  <b> Title: <%= event.title.capitalize! %></b> <br>
-  <p>Description:  <%= event.description %></p>
-  
- 
+  <b> Title: <%= event.title.capitalize! %></b>
 
-  <b> Scheduled to hold at: <%= event.date %></b> <br><br>
+  <%= link_to 'View' , events_show_url %> 
+  
+  <br>
+  >
 <% end %>
 <% end %>
 
 <h2>Create a new event: <%= link_to  "New event", events_new_url %></h2>
-<h1> <%= link_to 'View all Events', events_show_url %></h1>
+

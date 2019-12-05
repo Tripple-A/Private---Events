@@ -17,8 +17,8 @@ class EventsController < ApplicationController
     end
   end
 
-  def show
-    @events = Event.all
+  def show 
+   # @event = Event.find()
   end
 
   private
