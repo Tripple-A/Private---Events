@@ -1,0 +1,11 @@
+<h2>These are the upcoming events</h2>
+    <ul>
+
+        <% @events.each do |event| %>
+    
+        <li><%= event.title%>:  <%= event.description%></li>
+    
+    <% end %>
+
+    </ul>
+    
