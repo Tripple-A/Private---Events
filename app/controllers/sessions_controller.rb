@@ -4,8 +4,11 @@ class SessionsController < ApplicationController
 
   def create
     user = User.find_by(name: params[:session][:name])
-    log_in(user) if user
-    
+    if user
+      log_in(user)
+    else
+      render 'new'
+    end
   end
 
   def destroy

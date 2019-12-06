@@ -1,3 +1,11 @@
+<% if @current_user.nil? %>
+<%= render 'layouts/header2' %>
+
+<% else %>
+<%= render 'layouts/headings' %>
+<% end %>
+
+
 <h1>Create a new event</h1>
 
 <%= form_for(:events) do |f| %>

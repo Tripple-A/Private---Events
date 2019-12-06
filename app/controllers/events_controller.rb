@@ -4,10 +4,12 @@ class EventsController < ApplicationController
     @events = Event.all
     @upcoming = Event.upcoming
     @past = Event.past
+    @current_user = current_user
   end
 
   def new
     @event = Event.new
+    @current_user = current_user
   end
 
   def create

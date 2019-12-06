@@ -1,3 +1,7 @@
+<% if !@current_user.nil? %>
+<%= render 'layouts/headings' %>
+<% end %>
+
 <h1>You are welcome <%= @user.name %></h1>
 
 <% if !@events.empty? %>
@@ -14,13 +18,17 @@
  
 <% end %>
 
+<% if @invitations.empty? %>
+<h3>You have not been invited to any evets</h3>
+<% end %>
+
 <% if !@invites.empty? %>
 
 <% if !@upcoming_events.empty? %>
 <ul>
-<h3>You have been invited to the following events</h3>
+<h3>You have been invited to the following upcoming events</h3>
 
-<!-- upcoming events loop -->
+
 <% @upcoming_events.each do |event| %> 
   <li><%= link_to event.title , event %> </li>
 <% end %>
@@ -28,12 +36,12 @@
 
 <% end %>
 
-<!-- previous events loop -->
+
 <% if !@previous_events.empty? %>
 <ul>
   <h3>You attended the following events:</h3>
   
-  <!-- upcoming events loop -->
+  
   <% @previous_events.each do |event| %> 
     <li><%= link_to event.title , event %> </li>
   <% end %>
@@ -43,5 +51,4 @@
 
 <% end %>
 
-<h2>Create a new event: <%= link_to  "New event", events_new_url %></h2>
-<%= link_to  "Sign Out", signout_path , method: :delete %></h2>
+

@@ -1,3 +1,12 @@
+
+
+<% if @current_user.nil? %>
+<%= render 'layouts/header2' %>
+
+<% else %>
+<%= render 'layouts/headings' %>
+<% end %>
+
 <% if !@upcoming.empty? %>
 <h2>These are the upcoming events</h2>
     <ul>

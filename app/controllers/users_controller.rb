@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   
   def index 
-  
+  @current_user = current_user
   end
   
   def new
@@ -19,6 +19,7 @@ end
 
   def show
     @user = User.find(params[:id])
+    @invitations = @user.invitations
     @events = @user.created_events
     @invites = @user.attended_events
     @current_user = current_user

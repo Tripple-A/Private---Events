@@ -1,4 +1,11 @@
-<h2>  <%= @event.title%> </h2>
+<% if @current_user.nil? %>
+<%= render 'layouts/header2' %>
+
+<% else %>
+<%= render 'layouts/headings' %>
+<% end %>
+
+<h2> Name of Event: <%= @event.title%> </h2>
 
 This event was created by  <b><%= @event.creator.name.capitalize %></b>
 <br>
