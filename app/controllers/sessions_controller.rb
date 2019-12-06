@@ -1,6 +1,7 @@
+# frozen_string_literal: true
+
 class SessionsController < ApplicationController
-  def new
-  end
+  def new; end
 
   def create
     user = User.find_by(name: params[:session][:name])
@@ -13,9 +14,7 @@ class SessionsController < ApplicationController
 
   def destroy
     log_out if logged_in?
-    flash[:success] = "Successfully logged out!"
-		redirect_to root_url
+    flash[:success] = 'Successfully logged out!'
+    redirect_to root_url
   end
-
-  
 end
