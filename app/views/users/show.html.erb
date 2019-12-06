@@ -14,17 +14,34 @@
  
 <% end %>
 
-<% if @invites %>
+<% if !@invites.empty? %>
+
+<% if !@upcoming_events.empty? %>
 <ul>
 <h3>You have been invited to the following events</h3>
 
-<% @invites.each do |event| %>
-
-  <li> <%= link_to event.title , event %> </li>
-</ul>
+<!-- upcoming events loop -->
+<% @upcoming_events.each do |event| %> 
+  <li><%= link_to event.title , event %> </li>
 <% end %>
+</ul>
+
+<% end %>
+
+<!-- previous events loop -->
+<% if !@previous_events.empty? %>
+<ul>
+  <h3>You attended the following events:</h3>
+  
+  <!-- upcoming events loop -->
+  <% @previous_events.each do |event| %> 
+    <li><%= link_to event.title , event %> </li>
+  <% end %>
+</ul>
+
+<% end %>
+
 <% end %>
 
 <h2>Create a new event: <%= link_to  "New event", events_new_url %></h2>
 <%= link_to  "Sign Out", signout_path , method: :delete %></h2>
-

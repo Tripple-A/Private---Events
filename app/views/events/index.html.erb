@@ -1,11 +1,26 @@
+<% if !@upcoming.empty? %>
 <h2>These are the upcoming events</h2>
     <ul>
 
-        <% @events.each do |event| %>
+        <% @upcoming.each do |event| %>
     
         <li><%= link_to event.title , event %></li>
     
-    <% end %>
+        <% end %>
 
     </ul>
+
+<% end %> 
+
+<% if !@past.empty? %>
+<h2>These are the past events</h2>
+    <ul>
+
+        <% @past.each do |event| %>
     
+        <li><%= link_to event.title , event %></li>
+    
+        <% end %>
+
+    </ul>
+<% end %>
