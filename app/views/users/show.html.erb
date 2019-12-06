@@ -1,16 +1,28 @@
 <h1>You are welcome <%= @user.name %></h1>
 
-<% if @events %>
+<% if !@events.empty? %>
 <h3>You created the following events</h3>
 
 <% @events.each do |event| %>
+<%= link_to event.title , event %> 
+<% end %>
+   <br>
+<% else %>
+<h3>You have not created any events</h3>
+ 
+<% end %>
+
+<% if @invites %>
+<h3>You have been invited to the following events</h3>
+
+<% @invites.each do |event| %>
 
   
 
   <%= link_to event.title , event %> 
   
   <br>
-  >
+  
 <% end %>
 <% end %>
 

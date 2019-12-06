@@ -20,6 +20,7 @@ end
   def show
     @user = User.find(params[:id])
     @events = @user.created_events
+    @invites = @user.attended_events
     
   end
 
