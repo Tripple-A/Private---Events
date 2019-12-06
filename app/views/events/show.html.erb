@@ -2,11 +2,22 @@
 </h2>
 
 This event was created by  <b><%= @event.creator.name.capitalize %></b>
+<br>
+The following people will be attending:
+<br>
+<ul>
+		<%= @event.attendees.each do |attendee| %>
+		<li><%=  attendee[:name] %> </li>
+		<% end %>
+		
+	
+</ul>
+
 
 <% if @checked %>
-<%= form_for(:invitation) do |f| %>
+<%= form_for(@invitation) do |f| %>
 	<%= f.hidden_field :attended_event_id, value: @event.id %>
-
+	<%= f.hidden_field :host_id, value: @current_user.id %>
 	<%= f.label :attendee_id, 'Invite:' %>
 	<%= f.select :attendee_id, options_for_select(@users.map do |user|
 	                           [user.name, user.id]
