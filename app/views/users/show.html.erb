@@ -5,9 +5,9 @@
 
 <% @events.each do |event| %>
 
-  <b> Title: <%= event.title.capitalize! %></b>
+  
 
-  <%= link_to 'View' , events_show_url %> 
+  <%= link_to event.title , event %> 
   
   <br>
   >

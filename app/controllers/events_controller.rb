@@ -18,7 +18,9 @@ class EventsController < ApplicationController
   end
 
   def show 
-   # @event = Event.find()
+   @event = Event.find(params[:id])
+   @checked = @event.creator == current_user
+   @users = User.all
   end
 
   private

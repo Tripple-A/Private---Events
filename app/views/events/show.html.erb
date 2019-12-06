@@ -1,1 +1,17 @@
-hello
+<h2>  <%= @event.title%>
+</h2>
+
+This event was created by  <b><%= @event.creator.name.capitalize %></b>
+
+<% if @checked %>
+<%= form_for(:invitation) do |f| %>
+	<%= f.hidden_field :attended_event_id, value: @event.id %>
+
+	<%= f.label :attendee_id, 'Invite:' %>
+	<%= f.select :attendee_id, options_for_select(@users.map do |user|
+	                           [user.name, user.id]
+				                   end),
+															{ :prompt => 'Select friend' } %>
+	<%= f.submit 'Invite' %>
+<% end %>
+<% end %>
