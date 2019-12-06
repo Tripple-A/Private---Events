@@ -2,10 +2,12 @@
 
 <% if !@events.empty? %>
 <h3>You created the following events</h3>
-
+<ul>
 <% @events.each do |event| %>
-<%= link_to event.title , event %> 
+<li> <%= link_to event.title , event %></li>
+ 
 <% end %>
+</ul>
    <br>
 <% else %>
 <h3>You have not created any events</h3>
@@ -13,16 +15,13 @@
 <% end %>
 
 <% if @invites %>
+<ul>
 <h3>You have been invited to the following events</h3>
 
 <% @invites.each do |event| %>
 
-  
-
-  <%= link_to event.title , event %> 
-  
-  <br>
-  
+  <li> <%= link_to event.title , event %> </li>
+</ul>
 <% end %>
 <% end %>
 

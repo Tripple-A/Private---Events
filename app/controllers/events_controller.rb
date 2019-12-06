@@ -20,9 +20,9 @@ class EventsController < ApplicationController
   def show 
    @event = Event.find(params[:id])
    @current_user = current_user
-   @checked = @event.creator || @event.attendees.include?(@current_user)
+   @checked = (@event.creator || @event.attendees.include?(@current_user)) && logged_in?
   @users = User.all
-  @invitation = current_user.invitations.build if current_user
+  @invitation = current_user.invitations.build if logged_in?
   @invited = @event.attendees
   end
 

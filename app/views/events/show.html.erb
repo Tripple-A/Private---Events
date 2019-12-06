@@ -27,7 +27,7 @@ The following people will be attending:
 	<%= f.select :attendee_id, options_for_select(@users.map do |user|
 	                           [user.name, user.id]
 				                   end),
-	{ :prompt => 'Select friend' } %>
+															{ :prompt => 'Select friend' } %>
 	<%= f.submit 'Invite' %>
 <% end %>
 <% end %>
