@@ -1,0 +1,22 @@
+<% if @current_user.nil? %>
+<%= render 'layouts/header2' %>
+
+<% else %>
+<%= render 'layouts/headings' %>
+<% end %>
+
+
+<h1>Create a new event</h1>
+
+<%= form_for(:events) do |f| %>
+  <%= f.label :title, "Name of the event" %>
+  <%= f.text_field :title %> <br>
+
+  <%= f.label :description, "Add the event description" %>
+  <%= f.text_area :description %> <br>
+
+  <%= f.label :date, "Date of the event" %>
+  <%= f.date_field :date %>
+  <br>
+  <%= f.submit "Create Event" %>
+<% end %>

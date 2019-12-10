@@ -1,0 +1,54 @@
+<% if !@current_user.nil? %>
+<%= render 'layouts/headings' %>
+<% end %>
+
+<h1>You are welcome <%= @user.name %></h1>
+
+<% if !@events.empty? %>
+<h3>You created the following events</h3>
+<ul>
+<% @events.each do |event| %>
+<li> <%= link_to event.title , event %></li>
+ 
+<% end %>
+</ul>
+   <br>
+<% else %>
+<h3>You have not created any events</h3>
+ 
+<% end %>
+
+<% if @invitations.empty? %>
+<h3>You have not been invited to any events</h3>
+<% end %>
+
+<% if !@invites.empty? %>
+
+<% if !@upcoming_events.empty? %>
+<ul>
+<h3>You have been invited to the following upcoming events</h3>
+
+
+<% @upcoming_events.each do |event| %> 
+  <li><%= link_to event.title , event %> </li>
+<% end %>
+</ul>
+
+<% end %>
+
+
+<% if !@previous_events.empty? %>
+<ul>
+  <h3>You attended the following events:</h3>
+  
+  
+  <% @previous_events.each do |event| %> 
+    <li><%= link_to event.title , event %> </li>
+  <% end %>
+</ul>
+
+<% end %>
+
+<% end %>
+
+

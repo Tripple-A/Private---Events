@@ -1,0 +1,8 @@
+<%= link_to 'Home', root_path %>
+<%= form_for (:session) do |f| %>
+
+  <%= f.label :name, 'Enter your name' %>
+  <%= f.text_field :name %>  
+
+  <%= f.submit   'Sign in' %>
+  <% end %>

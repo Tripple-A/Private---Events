@@ -1,0 +1,35 @@
+
+
+<% if @current_user.nil? %>
+<%= render 'layouts/header2' %>
+
+<% else %>
+<%= render 'layouts/headings' %>
+<% end %>
+
+<% if !@upcoming.empty? %>
+<h2>These are the upcoming events</h2>
+    <ul>
+
+        <% @upcoming.each do |event| %>
+    
+        <li><%= link_to event.title , event %></li>
+    
+        <% end %>
+
+    </ul>
+
+<% end %> 
+
+<% if !@past.empty? %>
+<h2>These are the past events</h2>
+    <ul>
+
+        <% @past.each do |event| %>
+    
+        <li><%= link_to event.title , event %></li>
+    
+        <% end %>
+
+    </ul>
+<% end %>

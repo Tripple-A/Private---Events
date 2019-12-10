@@ -1,0 +1,21 @@
+
+
+<%= link_to 'Home', root_path %>
+
+<h1> Sign Up Here</h1>
+
+<%= form_for @user do |f| %>
+<%= render 'layouts/error_messages' %>
+  <%= f.label :name, 'Enter your name' %>
+  <%= f.text_field :name %>  
+<br><br>
+  <%= f.label :email, 'Enter your email' %>
+  <%= f.email_field :email %>  
+  <br><br>
+  <%= f.label :password_digest, 'Enter your password' %>
+  <%= f.password_field :password_digest %>
+  <br><br>
+ 
+  <%= f.submit  'Create your account'%>
+
+<% end %>

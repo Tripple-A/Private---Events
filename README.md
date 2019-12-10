@@ -1,24 +1,23 @@
-# README
+# Private Events
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project was created with the intention of making an event website similar to Eventbrite. It was made with the purpose of learning associations in Rails. 
 
-Things you may want to cover:
+# Instructions
 
-* Ruby version
+ 1. Download or clone this repository
 
-* System dependencies
+ 2. Start the rails server with by type `rails s` in the console (rails needs to be installed)
+          
+ 3. Play around with the application, create your account, an event and invite people into it!
 
-* Configuration
+# Built With
+* Ruby v2.6.3+
+* Rails 6
+* `rvm`
+* VsCode
+* Ubuntu
+* Love and passion for code ❤️
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Authors
+* 🇳🇬 [Abiodun Ajibade](https://github.com/Tripple-A/)
+* 🇧🇷 [Izaias Neto](https://www.github.com/izaiasneto4)                      
