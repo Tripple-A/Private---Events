@@ -1,12 +1,5 @@
 Rails.application.routes.draw do
-  get 'events/new'
   post 'events/new', to: 'events#create'
-  get 'events/create'
-  get 'events/show'
-  get 'sessions/new'
-  post 'sessions/new', to: 'sessions#create'
-  get 'sessions/destroy'
-  get 'events/index', to: 'events#index'
   root 'users#index'
   get '/signin', to: 'sessions#new'
   post '/signin', to: 'sessions#create'

@@ -1,10 +1,30 @@
 
-<% if @current_user.nil? %>
+<div class="body">
+    <% if @current_user.nil? %>
 <%= render 'layouts/header2' %>
 
 <% else %>
 <%= render 'layouts/headings' %>
 <% end %>
+<div class="pinky">
+    <div class="own">
+    <p>  CREATE YOUR EVENTS </p> 
+    <p>  INVITE YOUR FRIENDS </p>  
+    </div>
+    <div class="own own2 ">
+        <p>  CHECK OUT THE LATEST EVENTS </p> 
+         
+    </div>
+    <div class="own">
+        <p>  RECEIVE INVITATIONS </p> 
+        <p>  ATTEND IF YOU WISH </p> 
+       
+    </div>
+</div>
+    <div class="intro">
+        <b>EventRite</b> - An app that lets you plan your events, put them into your calendar,
+        invite the people you want and manage all intricacies.
+    </div>
+</div>
 
-<h1> You are welcome to private events</h1>
 

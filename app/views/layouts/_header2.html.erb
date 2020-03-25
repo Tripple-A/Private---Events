@@ -1,4 +1,13 @@
-<%= link_to 'SIGN UP', new_user_url %>
-<%= link_to 'SIGN IN', signin_path %>
- <%= link_to 'View all Events', events_index_url %>
- <%= link_to 'Home', root_path %>
+<div class="nav">
+    <div class='logo'>  <a class='li'> EventRiteApp </a></div>
+           
+            <%= link_to 'Sign In', signin_path, class: 'li check' %>
+  
+            <%= link_to 'Sign Up', new_user_url, class: 'li check' %>
+            <%= link_to 'Events', events_url, class: 'li check' %> 
+             <%= link_to 'Home', root_path, class: 'li check' %>
+
+</div>
+    
+          
+

@@ -1,3 +1,81 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.body{
+    background: linear-gradient(rgb(252,227,108),rgb(250,217,78)) ;
+    overflow-y: hidden;
+    .nav{
+        display:flex;
+        
+        .li{
+            margin-right: 20px;
+            margin-top:10px;
+            margin-bottom:30px;
+            color:black;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: 'Oswald', sans-serif;
+        }
+        .logo {
+            padding:10px;
+            margin-right: 32%;
+        }
+
+    }
+           
+    .pinky{
+        width:500px;
+        height:500px;
+        border-radius: 50%;
+        margin:0px auto;
+        background: linear-gradient(to right,rgb(254,67,88),rgb(255,143,77));
+        .own{
+            width:800px;
+            display:flex;
+            font-weight: bold;
+            color:black;
+            top:20%;
+            margin-bottom:40px ;
+            p{
+                padding-top:40px;
+                padding-left:0px;
+                margin-right:40px;
+                font-size:30px;
+                font-weight:900px;
+                font-family: 'Liu Jian Mao Cao', cursive;
+            }
+        }
+        .own2{
+            p{
+                padding-left:50px
+            }
+        }  
+    }
+    
+}
+.red{
+    background:rgb(254,67,88);
+    text-align: center;
+    padding:10px;
+}
+
+.people{
+    width:150px;
+    height:150px;
+    background-image: url(img1.png);
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top:40px;
+    margin-right: 20%;
+}
+
+.intro{
+    width:300px;
+    height:300px;
+    font-size: 18px;
+    padding-left:10px;
+    margin-bottom: 0px;
+}
+
