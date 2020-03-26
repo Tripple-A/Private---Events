@@ -1,6 +1,9 @@
 {
   "name": "Private___Events",
   "private": true,
+  "engines": {
+    "node": "8.10.0"
+  },
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
