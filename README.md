@@ -46,13 +46,13 @@ Below is a screenshot of what it looks like on a laptop screen.
 Clone the Repository,
 
 ```Shell
-your@pc:~$ git clone git@github.com:Tripple-A/Private-Events.git
+your@pc:~$ git clone git@github.com:Tripple-A/Private---Events.git
 ```
 
 Move to the downloaded folder
 
 ```Shell
-your@pc:~$ cd Private-Events
+your@pc:~$ cd Private---Events
 ```
 
 Install all packages
