@@ -9,6 +9,7 @@ This app is an Event managing app built to help users manage their events and wh
 * [Live Preview](#live-preview)
 * [Required Installations](#required-installations)
 * [Instalation of This App](#instalation)
+* [Future Features](#future-features)
 * [License](#license)
 * [Authors](#authors)
 * [Acknowledgements](#acknowledgements)
@@ -68,6 +69,10 @@ your@pc:~$ rails s
 ```
           
 Play around with the application, create your account, an event and invite people to attend.
+
+<!-- Future features -->
+## Future Features
+* Make the app mobile responsive.
 
 ## License
 
