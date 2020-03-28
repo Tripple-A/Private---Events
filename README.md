@@ -17,7 +17,7 @@ This app is an Event managing app built to help users manage their events and wh
 <!-- User features -->
 ## User Features
 * A user can sign up and create his own events.
-* A user upon sign up can invite and be invited to an event.
+* A user upon sign in can invite and be invited to an event.
 * A user not signed in can view all events and attendess but can neither invite nor create.
 * A user can only invite others to an even he either created or was invited to.
 
@@ -32,8 +32,8 @@ This app is an Event managing app built to help users manage their events and wh
 
 <!-- LIVE PREVIEW -->
 ## LIVE PREVIEW
-Find the live version [here](https://eventritte.herokuapp.com/).
-Below is a screenshot of what it looks like on a laptop screen.
+Find the live version [here](https://eventritte.herokuapp.com/). For tests,sign in as 'john@doe.com'
+Below is a brief walk-around on a laptop screen.
 ![Image](/app/assets/images/proof.gif)
 
 <!-- REQUIRED INSTALLATION -->
@@ -80,7 +80,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- AUTHORS -->
 ## Authors
-* 🇳🇬  Abiodun Ajibade - biodun9@gmail.com | [Github Account](https://github.com/Tripple-A)
+* 🇳🇬  Abiodun Ajibade - biodun9@gmail.com | [Github Account](https://github.com/Tripple-A) | [Twitter](https://twitter.com/AbiodunAjibade3) | Linkedin(https://linkedin.com/in/abiodun-ajibade)
 * 🇧🇷 Izaias Neto - [Github Account](https://www.github.com/izaiasneto4)
 *
 
