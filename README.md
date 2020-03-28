@@ -32,7 +32,7 @@ This app is an Event managing app built to help users manage their events and wh
 
 <!-- LIVE PREVIEW -->
 ## LIVE PREVIEW
-Find the live version [here](https://eventritte.herokuapp.com/). For tests,sign in as 'john@doe.com'
+Find the live version [here](https://eventritte.herokuapp.com/). For demo,sign in as 'john@doe.com'
 Below is a brief walk-around on a laptop screen.
 ![Image](/app/assets/images/proof.gif)
 
