@@ -9,6 +9,7 @@ This app is an Event managing app built to help users manage their events and wh
 * [Live Preview](#live-preview)
 * [Required Installations](#required-installations)
 * [Instalation of This App](#instalation)
+* [Future Features](#future-features)
 * [License](#license)
 * [Authors](#authors)
 * [Acknowledgements](#acknowledgements)
@@ -46,13 +47,13 @@ Below is a screenshot of what it looks like on a laptop screen.
 Clone the Repository,
 
 ```Shell
-your@pc:~$ git clone git@github.com:Tripple-A/Private-Events.git
+your@pc:~$ git clone git@github.com:Tripple-A/Private---Events.git
 ```
 
 Move to the downloaded folder
 
 ```Shell
-your@pc:~$ cd Private-Events
+your@pc:~$ cd Private---Events
 ```
 
 Install all packages
@@ -68,6 +69,10 @@ your@pc:~$ rails s
 ```
           
 Play around with the application, create your account, an event and invite people to attend.
+
+<!-- Future features -->
+## Future Features
+* Make the app mobile responsive.
 
 ## License
 
