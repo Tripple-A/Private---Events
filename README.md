@@ -33,7 +33,7 @@ This app is an Event managing app built to help users manage their events and wh
 ## LIVE PREVIEW
 Find the live version [here](https://eventritte.herokuapp.com/).
 Below is a screenshot of what it looks like on a laptop screen.
-![Image](/src/proof.png)
+![Image](/app/assets/images/proof.gif)
 
 <!-- REQUIRED INSTALLATION -->
 ## REQUIRED INSTALLATIONS
