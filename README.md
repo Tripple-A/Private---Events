@@ -1,11 +1,11 @@
 # Private Events
 
-This app is an Event managing app built to help users manage their events and who exactly attends. It also helps them keep track of events they have attended and those they have been invited to.
+This app is an event management app built to help users manage their events and who exactly attends. It also helps them keep track of events they have attended and those they have been invited to.
 
 ## Table of Contents
 
 * [User Features](#user-features)
-* [Built With](#built-with)
+* [Built with](#built-with)
 * [Live Preview](#live-preview)
 * [Required Installations](#required-installations)
 * [Instalation of This App](#instalation)
@@ -21,8 +21,8 @@ This app is an Event managing app built to help users manage their events and wh
 * A user not signed in can view all events and attendess but can neither invite nor create.
 * A user can only invite others to an even he either created or was invited to.
 
-<!-- BUILT WITH -->
-# Built With
+<!-- BUILT wITH -->
+# Built with
 * Ruby v2.6.3+
 * Rails 6
 * `rvm`
@@ -38,9 +38,9 @@ Below is a brief walk-around on a laptop screen.
 
 <!-- REQUIRED INSTALLATION -->
 ## Required Installations
-* ruby
-* rails
-* node
+* Ruby
+* Rails
+* Node
 
 <!-- INSTALLATION -->
 ## Installation of This Repository
