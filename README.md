@@ -22,7 +22,7 @@ This app is an event management app built to help users manage their events and 
 * A user can only invite others to an even he either created or was invited to.
 
 <!-- BUILT wITH -->
-# Built with
+## Built with
 * Ruby v2.6.3+
 * Rails 6
 * `rvm`
