@@ -45,7 +45,7 @@ Below is a screenshot of what it looks like on a laptop screen.
 
 <!-- INSTALLATION -->
 ## Installation of This Repository
-Clone the Repository,
+Clone the Repository
 
 ```Shell
 your@pc:~$ git clone git@github.com:Tripple-A/Private---Events.git
