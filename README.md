@@ -6,6 +6,7 @@ This app is an event management app built to help users manage their events and 
 
 * [User Features](#user-features)
 * [Built with](#built-with)
+* [Demo](#demo)
 * [Live Preview](#live-preview)
 * [Required Installations](#required-installations)
 * [Instalation of This App](#instalation)
@@ -29,10 +30,14 @@ This app is an event management app built to help users manage their events and 
 * Ubuntu
 * Love and passion for code ❤️
 
+<!-- DEMO -->
+## Demo
+For demo purposes, you can sign in with the credential below;
+* Email - john@doe.com
+
 <!-- LIVE PREVIEW -->
 ## Live Preview
 Find the live version [here](https://eventritte.herokuapp.com/). 
-For a demo,you can sign in as 'john@doe.com'.
 Below is a screenshot of what it looks like on a laptop screen.
 ![Image](/app/assets/images/event.png)
 
