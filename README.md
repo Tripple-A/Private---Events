@@ -25,7 +25,6 @@ This app is an event management app built to help users manage their events and 
 ## Built with
 * Ruby v2.6.3+
 * Rails 6
-* `rvm`
 * VsCode
 * Ubuntu
 * Love and passion for code ❤️
